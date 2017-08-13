@@ -1,10 +1,9 @@
-package edu.ucsc.cross.hse.model.position.euclidean;
+package edu.ucsc.cross.hse.model.position.general;
 
 import edu.ucsc.cross.hse.core.framework.component.Component;
 import edu.ucsc.cross.hse.core.framework.data.Data;
-import edu.ucsc.cross.hse.model.position.general.Position;
 
-public class EuclideanPositionData extends Component implements Position
+public class PositionData extends Component implements Position
 {
 
 	Data<Double> xPosition; // x position
@@ -14,7 +13,7 @@ public class EuclideanPositionData extends Component implements Position
 	/*
 	 * Constructor with position defined
 	 */
-	public EuclideanPositionData(Double x_position, Double y_position, Double z_position)
+	public PositionData(Double x_position, Double y_position, Double z_position)
 	{
 		super("Euclidean Position");
 		instantiateElements(x_position, y_position, z_position);
@@ -23,7 +22,7 @@ public class EuclideanPositionData extends Component implements Position
 	/*
 	 * Constructor without position defined
 	 */
-	public EuclideanPositionData()
+	public PositionData()
 	{
 		super("Euclidean Position");
 		instantiateElements(0.0, 0.0, 0.0);
@@ -76,8 +75,8 @@ public class EuclideanPositionData extends Component implements Position
 		return xPosition.getValue() == null;
 	}
 
-	public static EuclideanPositionData getNullPosition()
+	public static PositionData getNullPosition()
 	{
-		return new EuclideanPositionData(null, null, null);
+		return new PositionData(null, null, null);
 	}
 }

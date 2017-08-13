@@ -1,11 +1,9 @@
-package edu.ucsc.cross.hse.model.position.euclidean;
+package edu.ucsc.cross.hse.model.position.general;
 
 import edu.ucsc.cross.hse.core.framework.component.Component;
 import edu.ucsc.cross.hse.core.framework.data.State;
-import edu.ucsc.cross.hse.model.position.general.Position;
-import edu.ucsc.cross.hse.model.position.general.PositionState;
 
-public class EuclideanPositionStateData extends Component implements PositionState, Position
+public class PositionStateData extends Component implements PositionState, Position
 {
 
 	public State xPosition; // x position state
@@ -15,7 +13,7 @@ public class EuclideanPositionStateData extends Component implements PositionSta
 	/*
 	 * Constructor with position defined
 	 */
-	public EuclideanPositionStateData(Double x_position, Double y_position, Double z_position)
+	public PositionStateData(Double x_position, Double y_position, Double z_position)
 	{
 		super("Euclidean Position State");
 		instantiateElements(x_position, y_position, z_position);
@@ -24,7 +22,7 @@ public class EuclideanPositionStateData extends Component implements PositionSta
 	/*
 	 * Constructor without position defined
 	 */
-	public EuclideanPositionStateData()
+	public PositionStateData()
 	{
 		super("Euclidean Position State");
 		instantiateElements(0.0, 0.0, 0.0);
