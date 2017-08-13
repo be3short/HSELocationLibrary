@@ -2,8 +2,10 @@ package edu.ucsc.cross.hse.model.position.euclidean;
 
 import edu.ucsc.cross.hse.core.framework.component.Component;
 import edu.ucsc.cross.hse.core.framework.data.State;
+import edu.ucsc.cross.hse.model.position.general.Position;
+import edu.ucsc.cross.hse.model.position.general.PositionState;
 
-public class EuclideanPositionStateData extends Component implements EuclideanPositionState, EuclideanPosition
+public class EuclideanPositionStateData extends Component implements PositionState, Position
 {
 
 	public State xPosition; // x position state

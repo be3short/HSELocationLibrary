@@ -1,8 +1,8 @@
-package edu.ucsc.cross.hse.model.position.euclidean;
+package edu.ucsc.cross.hse.model.position.general;
 
 import edu.ucsc.cross.hse.core.framework.data.State;
 
-public interface EuclideanPositionState
+public interface PositionState
 {
 
 	/*

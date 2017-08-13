@@ -1,6 +1,6 @@
-package edu.ucsc.cross.hse.model.position.euclidean;
+package edu.ucsc.cross.hse.model.position.general;
 
-public interface EuclideanPosition
+public interface Position
 {
 
 	/*
