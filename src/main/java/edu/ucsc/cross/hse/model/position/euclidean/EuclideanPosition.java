@@ -17,4 +17,9 @@ public interface EuclideanPosition
 	 * Get the z position value
 	 */
 	public Double getZPosition();
+
+	/*
+	 * Flag indicating if the position is null
+	 */
+	public boolean isNullPosition();
 }

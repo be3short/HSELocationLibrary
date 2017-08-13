@@ -67,4 +67,16 @@ public class EuclideanPositionData extends Component implements EuclideanPositio
 		// TODO Auto-generated method stub
 		return zPosition.getValue();
 	}
+
+	@Override
+	public boolean isNullPosition()
+	{
+		// TODO Auto-generated method stub
+		return xPosition.getValue() == null;
+	}
+
+	public static EuclideanPositionData getNullPosition()
+	{
+		return new EuclideanPositionData(null, null, null);
+	}
 }

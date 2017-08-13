@@ -70,7 +70,6 @@ public class EuclideanPositionStateData extends Component implements EuclideanPo
 	/*
 	 * Get the value of the x state component
 	 */
-
 	@Override
 	public Double getXPosition()
 	{
@@ -81,7 +80,6 @@ public class EuclideanPositionStateData extends Component implements EuclideanPo
 	/*
 	 * Get the value of the y state component
 	 */
-
 	@Override
 	public Double getYPosition()
 	{
@@ -92,7 +90,6 @@ public class EuclideanPositionStateData extends Component implements EuclideanPo
 	/*
 	 * Get the value of the z state component
 	 */
-
 	@Override
 	public Double getZPosition()
 	{
@@ -100,4 +97,10 @@ public class EuclideanPositionStateData extends Component implements EuclideanPo
 		return zPosition.getValue();
 	}
 
+	@Override
+	public boolean isNullPosition()
+	{
+		// TODO Auto-generated method stub
+		return xPosition.getValue() == null;
+	}
 }
