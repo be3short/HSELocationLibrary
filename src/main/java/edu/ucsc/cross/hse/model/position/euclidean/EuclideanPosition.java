@@ -1,7 +1,5 @@
 package edu.ucsc.cross.hse.model.position.euclidean;
 
-import edu.ucsc.cross.hse.core.framework.data.State;
-
 public interface EuclideanPosition
 {
 

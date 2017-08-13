@@ -3,7 +3,7 @@ package edu.ucsc.cross.hse.model.position.euclidean;
 import edu.ucsc.cross.hse.core.framework.component.Component;
 import edu.ucsc.cross.hse.core.framework.data.State;
 
-public class Euclidean3DState extends Component implements EuclideanPositionState, EuclideanPosition
+public class EuclideanPositionStateData extends Component implements EuclideanPositionState, EuclideanPosition
 {
 
 	public State xPosition; // x position state
@@ -13,16 +13,18 @@ public class Euclidean3DState extends Component implements EuclideanPositionStat
 	/*
 	 * Constructor with position defined
 	 */
-	public Euclidean3DState(Double x_position, Double y_position, Double z_position)
+	public EuclideanPositionStateData(Double x_position, Double y_position, Double z_position)
 	{
+		super("Euclidean Position State");
 		instantiateElements(x_position, y_position, z_position);
 	}
 
 	/*
 	 * Constructor without position defined
 	 */
-	public Euclidean3DState()
+	public EuclideanPositionStateData()
 	{
+		super("Euclidean Position State");
 		instantiateElements(0.0, 0.0, 0.0);
 	}
 
